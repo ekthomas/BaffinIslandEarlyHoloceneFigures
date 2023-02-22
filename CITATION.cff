@@ -1,0 +1,22 @@
+# This CITATION.cff file was generated with cffinit.
+# Visit https://bit.ly/cffinit to generate yours today!
+
+cff-version: 1.2.0
+title: >-
+  Code to create biomarker figures and calculate
+  correlations
+message: 'If you use this software, please cite it as below.'
+type: software
+authors:
+  - given-names: Elizabeth K.
+    family-names: Thomas
+    email: ekthomas@buffalo.edu
+    name-particle: Elizabeth
+    affiliation: University at Buffalo
+    orcid: 'https://orcid.org/0000-0002-6489-7123'
+repository-code: >-
+  https://github.com/ekthomas/BaffinIslandEarlyHoloceneFigures
+abstract: >-
+  R code to plot GDGT and leaf wax distribution and index
+  data, and to calculate time-varying correlations between
+  proxy records.
