@@ -183,10 +183,9 @@ GDGTindices$HP5 <- (brGDGTdf[,c("brGDGT.IIIa.5Me")])/
 GDGTindices$CBT5Me <- -log(rowSums(brGDGTdf[,c("brGDGT.Ib","brGDGT.IIb.5Me")],na.rm = TRUE)/
                              ((rowSums(brGDGTdf[,c("brGDGT.Ia","brGDGT.IIa.5Me")], na.rm = TRUE))))
 
-GDGTindices$fC <- ((rowSums(brGDGTdf[,c("brGDGT.Ib","brGDGT.IIb.5Me","brGDGT.IIIb.5Me","brGDGT.IIb.6Me","brGDGT.IIIb.6Me")],na.rm = TRUE))
-                   +2*(rowSums(brGDGTdf[,c("brGDGT.IIc.5Me","brGDGT.IIIc.5Me","brGDGT.IIc.6Me","brGDGT.IIIc.6Me")],na.rm = TRUE)))/
-  ((rowSums(brGDGTdf[,c("brGDGT.Ia","brGDGT.IIa.5Me","brGDGT.IIIa.5Me","brGDGT.IIa.6Me","brGDGT.IIIa.6Me","brGDGT.Ib","brGDGT.IIb.5Me","brGDGT.IIIb.5Me","brGDGT.IIb.6Me","brGDGT.IIIb.6Me")],na.rm = TRUE))
-   +2*(rowSums(brGDGTdf[,c("brGDGT.IIc.5Me","brGDGT.IIIc.5Me","brGDGT.IIc.6Me","brGDGT.IIIc.6Me")],na.rm = TRUE)))
+GDGTindices$fC <- (((rowSums(brGDGTdf[,c("Ib","IIb5","IIIb5","IIb6","IIIb6")],na.rm = TRUE))
+                    +2*(rowSums(brGDGTdf[,c("IIc5","IIIc5","IIc6","IIIc6")],na.rm = TRUE)))/
+                     ((rowSums(brGDGTdf[,c("Ia","IIa5","IIIa5","IIa6","IIIa6","Ib","IIb5","IIIb5","IIb6","IIIb6","IIc5","IIIc5","IIc6","IIIc6")],na.rm = TRUE))))*0.5
 
 GDGTindices[GDGTindices == 0] <- NA
 
